@@ -5,7 +5,9 @@ public static void main(String[] args) {
 	Student [] array = new Student[100]; 
 	Input input = new Input(array);
 //	input.input(array);  이젠 이렇ㄱ ㅔ말고 인풋클래스의 생성자를 이용해보자 .
-	int count = input.input();
+	int count = input.fileInput();
+	System.out.println("count = "+count); 
+	//표시 깔끔하게 하려고 string split 사용. regex
 	
 	Calc calc = new Calc(array);
 	calc.calc(count);
