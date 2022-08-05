@@ -12,7 +12,7 @@ public class Student {
 	public String toString() {
 		return String.format("Student [stu_no=%-10s\t, name=%10s\t, kor=%5d, eng=%5d, mat=%5d, edp=%5d, tot=%5d, avg=%8.2f, grade=%3c\n]",
 				stu_no, name, kor, eng, mat, edp, tot, avg, grade);
-	}
+	} 
 
 	public Student(String stu_no, String name, int kor, int eng, int mat, int edp) {
 		this.stu_no = stu_no;
