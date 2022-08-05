@@ -24,12 +24,14 @@ public class Input {
 			System.out.print("Math: ");	int mat = this.sc.nextInt();
 			System.out.print("EDPS : ");	int edp = this.sc.nextInt();
 			this.sc.nextLine(); // delete buffer 
+			
 			this.array[count-1]= new Student(Stu_no, name, kor, eng, mat, edp);
 			
 			System.out.print("Continue?(I/O) :  ");
 			io = this.sc.next();
+			this.sc.nextLine(); // delete buffer 
 			
-		}while(io.equals("I")||io.equals("I"));
+		}while(io.equals("I")||io.equals("i"));
 			return count;
 		
 		}

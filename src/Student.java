@@ -10,7 +10,7 @@ public class Student {
 
 	@Override//object의 자식이다. object의 tostring을 제정할꺼야 
 	public String toString() {
-		return String.format("Student [stu_no=%-10s\t, name=%10s\t, kor=%5d, eng=%5d, mat=%5d, edp=%5d, tot=%5d, avg=%8.2f, grade=%3c\n]",
+		return String.format("[%-10s %10s\t %5d %5d %5d %5d %5d %8.2f %3c\n]",
 				stu_no, name, kor, eng, mat, edp, tot, avg, grade);
 	} 
 
